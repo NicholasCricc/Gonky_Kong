@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class GameData : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    private static int score;
+    private static int lives;
+
+    public static int Score
     {
-        
+        get { return score; }
+        set { score = value; }
     }
 
-    // Update is called once per frame
-    void Update()
+    public static int Lives
     {
-        
+        get { return lives; }
+        set { lives = value; }
     }
+
 }
