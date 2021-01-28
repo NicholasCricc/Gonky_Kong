@@ -9,9 +9,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] Text playerScoreText;
 
     [SerializeField] Text livesText;
+    [SerializeField] Slider livesSlider;
 
     [SerializeField] GameObject playerPrefab;
-
 
 
 
@@ -19,9 +19,9 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         GameData.Score = 0;
-        GameData.Lives = 3;
+        GameData.Lives = 4;
         playerScoreText.text = "Score: " + GameData.Score.ToString();
-        livesText.text = "Lives: " + GameData.Lives.ToString();
+        livesSlider.value = GameData.Lives;
     }
 
     // Update is called once per frame
@@ -33,8 +33,10 @@ public class GameManager : MonoBehaviour
     public void PlayerDie()
     {
         GameData.Lives--;
-        livesText.text = "Lives: " + GameData.Lives.ToString();
-        if (GameData.Lives > 0) Instantiate(playerPrefab, new Vector3(-5f, 0f, 0f), Quaternion.identity);
-        else SceneManager.LoadScene("Lose_Scene");
+        livesSlider.value = GameData.Lives;
+        if (GameData.Lives == 0) SceneManager.LoadScene("Lose_Screen");
     }
+
+
+    //Instantiate(playerPrefab, new Vector3(-4.27f, -2.45f, 0f), Quaternion.identity)
 }
