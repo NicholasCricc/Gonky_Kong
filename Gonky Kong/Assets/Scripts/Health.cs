@@ -24,8 +24,11 @@ public class Health : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Destroy(other.gameObject);
-        gameManager.PlayerDie();
+        if (other.tag == "Barrel")
+        {
+            Destroy(other.gameObject);
+            gameManager.PlayerDie();
+        }
     }
 
     // Update is called once per frame

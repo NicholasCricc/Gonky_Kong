@@ -7,6 +7,8 @@ public class GameData : MonoBehaviour
 
     private static int score;
     private static int lives;
+    private static int HighScore;
+    private static Vector3 PlayerPos;
 
     public static int Score
     {
@@ -18,6 +20,18 @@ public class GameData : MonoBehaviour
     {
         get { return lives; }
         set { lives = value; }
+    }
+
+    public static Vector3 playerpos
+    {
+        get { return PlayerPos; }
+        set { PlayerPos = value; }
+    }
+
+    public static int highscore
+    {
+        get { return HighScore; }
+        set { HighScore = value; }
     }
 
 }

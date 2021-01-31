@@ -10,4 +10,5 @@ public class SerializedData
 {
     public Vector3 serialized_Pos;
     public int serialized_Score;
+    public int serialized_HighScore;
 }

@@ -13,7 +13,7 @@ public class Score : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ScoreNum = 0;
+        ScoreNum = GameData.Score;
         MyScoreText.text = "Score : " + ScoreNum;
     }
 
@@ -28,6 +28,7 @@ public class Score : MonoBehaviour
         if(Coin_Score.tag == "Coin")
         {
             ScoreNum += 1;
+            GameData.Score = ScoreNum;
             Destroy(Coin_Score.gameObject);
             MyScoreText.text = "Score : " + ScoreNum;
         }
