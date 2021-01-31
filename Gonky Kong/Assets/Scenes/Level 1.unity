@@ -266,7 +266,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &176568452
 GameObject:
@@ -302,7 +302,7 @@ Transform:
   - {fileID: 767897344}
   - {fileID: 318221607}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &239335473
 GameObject:
@@ -594,7 +594,7 @@ GameObject:
   - component: {fileID: 322857591}
   - component: {fileID: 322857590}
   m_Layer: 0
-  m_Name: BoxCoin (1)
+  m_Name: BoxCoin
   m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -610,11 +610,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.3619702, y: -3.7472334, z: 10.451172}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
-  m_Children:
-  - {fileID: 2053261765}
-  - {fileID: 1307508167}
-  - {fileID: 1098616066}
-  - {fileID: 1005148527}
+  m_Children: []
   m_Father: {fileID: 865948984}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -876,12 +872,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 489702034}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.02, y: -2.3, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.36802983, y: -3.7672334, z: 10.451172}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_Father: {fileID: 865948984}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &544210699 stripped
 GameObject:
@@ -995,7 +991,7 @@ RectTransform:
   - {fileID: 248574340}
   - {fileID: 777395863}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1255,6 +1251,7 @@ GameObject:
   m_Component:
   - component: {fileID: 780423188}
   - component: {fileID: 780423189}
+  - component: {fileID: 780423190}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -1274,7 +1271,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &780423189
 MonoBehaviour:
@@ -1292,6 +1289,21 @@ MonoBehaviour:
   livesText: {fileID: 0}
   livesSlider: {fileID: 777395862}
   playerPrefab: {fileID: 544210699}
+--- !u!114 &780423190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780423187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b28a45bbdef75b4ea27a9e284dc94a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializedData:
+    serialized_Pos: {x: 0, y: 0, z: 0}
+    serialized_Score: 0
 --- !u!1 &865948983
 GameObject:
   m_ObjectHideFlags: 0
@@ -1302,7 +1314,7 @@ GameObject:
   m_Component:
   - component: {fileID: 865948984}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Coins
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1320,8 +1332,13 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 322857589}
+  - {fileID: 1098616066}
+  - {fileID: 1005148527}
+  - {fileID: 1307508167}
+  - {fileID: 2053261765}
+  - {fileID: 489702037}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1005148526
 GameObject:
@@ -1335,7 +1352,7 @@ GameObject:
   - component: {fileID: 1005148529}
   - component: {fileID: 1005148528}
   m_Layer: 0
-  m_Name: BoxCoin (5)
+  m_Name: BoxCoin
   m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1349,11 +1366,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1005148526}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2, y: 11.58, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 3.3619702, y: 2.0427666, z: 10.451172}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
-  m_Father: {fileID: 322857589}
-  m_RootOrder: 3
+  m_Father: {fileID: 865948984}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1005148528
 BoxCollider2D:
@@ -1443,7 +1460,7 @@ GameObject:
   - component: {fileID: 1098616068}
   - component: {fileID: 1098616067}
   m_Layer: 0
-  m_Name: BoxCoin (4)
+  m_Name: 'BoxCoin '
   m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1457,11 +1474,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1098616065}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.5, y: 11.440001, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.6119702, y: 1.9727669, z: 10.451172}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
-  m_Father: {fileID: 322857589}
-  m_RootOrder: 2
+  m_Father: {fileID: 865948984}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1098616067
 BoxCollider2D:
@@ -2513,7 +2530,7 @@ GameObject:
   - component: {fileID: 1307508169}
   - component: {fileID: 1307508168}
   m_Layer: 0
-  m_Name: BoxCoin (3)
+  m_Name: BoxCoin
   m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2527,11 +2544,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1307508166}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.84, y: 7.34, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.05802989, y: -0.077233315, z: 10.451172}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
-  m_Father: {fileID: 322857589}
-  m_RootOrder: 1
+  m_Father: {fileID: 865948984}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1307508168
 BoxCollider2D:
@@ -2876,7 +2893,7 @@ Transform:
   m_Children:
   - {fileID: 1336217006}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180.00002}
 --- !u!114 &2005910414
 MonoBehaviour:
@@ -2918,7 +2935,7 @@ GameObject:
   - component: {fileID: 2053261767}
   - component: {fileID: 2053261766}
   m_Layer: 0
-  m_Name: BoxCoin (2)
+  m_Name: BoxCoin
   m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2932,11 +2949,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2053261764}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.6599998, y: 5.8599997, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 4.19197, y: -0.81723356, z: 10.451172}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
-  m_Father: {fileID: 322857589}
-  m_RootOrder: 0
+  m_Father: {fileID: 865948984}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2053261766
 BoxCollider2D:

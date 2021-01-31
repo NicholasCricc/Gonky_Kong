@@ -13,21 +13,27 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] GameObject playerPrefab;
 
-
+    SaveManager MySaveManager;
 
     // Start is called before the first frame update
     void Start()
     {
         GameData.Score = 0;
         GameData.Lives = 4;
+        MySaveManager = GetComponent<SaveManager>();
+
+        MySaveManager.LoadData();
+
+
         playerScoreText.text = "Score: " + GameData.Score.ToString();
         livesSlider.value = GameData.Lives;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        MySaveManager.SaveMyData();
     }
 
     public void PlayerDie()

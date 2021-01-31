@@ -13,13 +13,13 @@ public class Health : MonoBehaviour
 
     private GameManager gameManager;
 
+
     // Use this for initialization
     void Start()
     {
         Debug.Log(currentHealth);
         currentHealth = startHealth;
         gameManager = FindObjectOfType<GameManager>();
-
     }
 
     private void OnTriggerEnter2D(Collider2D other)

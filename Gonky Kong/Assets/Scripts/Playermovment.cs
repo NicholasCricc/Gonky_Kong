@@ -38,6 +38,7 @@ public class Playermovment : MonoBehaviour
         //Movment Character
         controller.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
         jump = false;
+
     }
 
     public void Landing()
