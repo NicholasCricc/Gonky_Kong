@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GameManager">
+    <Position X="5.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQkAAAAACAAACgAACAAAAAAgAAAAKAAAAAAQgAAgMA=</HashCode>
+      <FileName>Assets\Scripts\GameManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Click">
+    <Position X="3.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAhAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Click.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Enemy">
+    <Position X="12.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAABAABAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Enemy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnemyShooting">
+    <Position X="9" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACBAAACAgAQAAAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\EnemyShooting.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameData">
+    <Position X="7.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAIAAACAgAAAAoAAAAAAIAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\GameData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Health">
+    <Position X="14.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEQAAAAAACAAAAAAAAAAAAAAAEAEAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Health.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HighScore">
+    <Position X="14.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEQAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\HighScore.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player">
+    <Position X="12.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAACAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Playermovment">
+    <Position X="10.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAQCAAAAAiAAAAEAAAAAAAAIAAAAEAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Playermovment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SaveManager">
+    <Position X="3.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAADAQAAAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\SaveManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Score">
+    <Position X="9" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAIAEAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Score.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SerializedData">
+    <Position X="7.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAABAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\SerializedData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

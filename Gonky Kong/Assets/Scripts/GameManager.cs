@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
 
     private Text PlayerHighScore;
 
+
     SaveManager MySaveManager;
 
     public static GameManager _instance;
@@ -77,10 +78,24 @@ public class GameManager : MonoBehaviour
     public void PlayerDie()
     {
         GameData.Lives--;
-        livesSlider.value = GameData.Lives;
+        SliderLives();
+        //livesSlider.value = GameData.Lives;
         GameData.highscore = GameData.Score;
         if (GameData.Lives == 0) SceneManager.LoadScene("Lose_Screen");
     }
+
+
+    /*public void Lives()
+    {
+        try
+        {
+            livesslider = livesSlider.value = GameData.Lives;
+        }
+        catch
+        {
+            Debug.Log("Lives Not Found");
+        }
+    }*/
 
     public void Highscore()
     {

@@ -57,7 +57,7 @@ public class SaveManager : MonoBehaviour
             if (serializedLoad != null)
             {
                 GameData.Score = serializedLoad.serialized_Score;
-                GameData.Score = serializedLoad.serialized_HighScore;
+                GameData.highscore = serializedLoad.serialized_HighScore;
             }
             file.Close();
         }
